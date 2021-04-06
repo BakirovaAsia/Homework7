@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 #RUN apk add tomcat9
-RUN apk add openjdk8-jre-headless
+RUN apk add openjdk11-jre-headless
 #base
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
