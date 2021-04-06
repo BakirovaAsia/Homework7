@@ -18,7 +18,7 @@ WORKDIR /usr/local/tomcat
 RUN wget https://mirrors.nav.ro/apache/tomcat/tomcat-8/v8.5.64/bin/apache-tomcat-8.5.64.tar.gz   -O /tmp/tomcat.tar.gz \
     && cd /tmp && tar xvfz /tmp/tomcat.tar.gz \
     && cp -Rv /tmp/apache-tomcat-8.5.64/* /usr/local/tomcat/ \
-    && rm -rf /tmp/*
+    && rm -rf /tmp/* \
     && rm -rf ./webapps/docs/* ./webapps/examples/*
 
 RUN pwd && ls -la
