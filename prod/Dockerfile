@@ -11,9 +11,12 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR /usr/local/tomcat
 
-RUN wget https://mirrors.nav.ro/apache/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz   -O /tmp/tomcat.tar.gz \
+#apache-tomcat-8.5.64.tar.gz  
+#apache-tomcat-9.0.44
+
+RUN wget https://mirrors.nav.ro/apache/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-8.5.64.tar.gz   -O /tmp/tomcat.tar.gz \
     && cd /tmp && tar xvfz /tmp/tomcat.tar.gz \
-    && cp -Rv /tmp/apache-tomcat-9.0.44/* /usr/local/tomcat/
+    && cp -Rv /tmp/apache-tomcat-8.5.64/* /usr/local/tomcat/
 
 RUN pwd && ls -la
 
