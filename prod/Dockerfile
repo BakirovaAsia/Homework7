@@ -10,9 +10,9 @@ ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openj
 
 WORKDIR /usr/local/tomcat
 
-RUN wget https://mirrors.nav.ro/apache/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44-deployer.tar.gz   -O /tmp/tomcat.tar.gz \
+RUN wget https://mirrors.nav.ro/apache/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz   -O /tmp/tomcat.tar.gz \
     && cd /tmp && tar xvfz /tmp/tomcat.tar.gz \
-    && cp -Rv /tmp/apache-tomcat-9.0.44-deployer/* /usr/local/tomcat/
+    && cp -Rv /tmp/apache-tomcat-9.0.44/* /usr/local/tomcat/
 
 #RUN pwd && ls -la
 
