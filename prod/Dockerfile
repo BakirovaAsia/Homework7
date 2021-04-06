@@ -1,13 +1,13 @@
-FROM alpine:latest
-
+#FROM alpine:latest 
+FROM openjdk:8-jre-alpine
 #RUN apk add tomcat
-RUN apk add \
-openjdk8-jre-base
+#RUN apk add \
+#openjdk8-jre-base
 #openjdk11-jre-headless
 #base
 
-ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
-ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+#ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
+#ENV PATH $PATH:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 
 WORKDIR /usr/local/tomcat
 
