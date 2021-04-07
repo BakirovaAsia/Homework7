@@ -1,8 +1,7 @@
 #FROM alpine:latest 
 FROM openjdk:8-jre-alpine
 #RUN apk add tomcat
-RUN apk add \
-wget
+RUN apk add --no-cache wget
 #openjdk8-jre-base
 #openjdk11-jre-headless
 #base
