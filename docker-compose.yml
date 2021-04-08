@@ -1,0 +1,15 @@
+version: "3"
+services:
+  pack:
+    build:./pack
+    volumes:
+      - web-dir:/usr/local/webapps
+  webapp:
+    build: ./prod
+    depends_on:
+      - pack
+    volumes:
+      - web-dir:/usr/local/tomcat/webapps
+
+volumes:
+  web-dir:
