@@ -23,7 +23,13 @@ RUN wget https://mirrors.nav.ro/apache/tomcat/tomcat-8/v8.5.64/bin/apache-tomcat
 
 WORKDIR /usr/local
 
-RUN cp -rf ./pack/* /usr/local/tomcat/webapps/     
+#RUN cp -rf ./pack/* /usr/local/tomcat/webapps/     
+
+RUN pwd && ls -la /usr/local/pack/*
+#cp -rf /tmp/* /usr/local/tomcat/webapps/ \
+#    && rm -rf /tmp/
+
+
 
 EXPOSE 8080
 CMD /usr/local/tomcat/bin/catalina.sh run
