@@ -11,7 +11,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - web-dir:/tmp
+      - web-dir:/usr/local/pack
     
 volumes:
   web-dir:

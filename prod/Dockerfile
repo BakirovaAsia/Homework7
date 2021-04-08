@@ -21,11 +21,11 @@ RUN wget https://mirrors.nav.ro/apache/tomcat/tomcat-8/v8.5.64/bin/apache-tomcat
             /usr/local/tomcat/webapps/docs/* \
             /usr/local/tomcat/webapps/examples/*
 
-WORKDIR /tmp
+WORKDIR /usr/local/pack
 
 RUN pwd && ls -la && \ 
-cp -rf /tmp/* /usr/local/tomcat/webapps/ \
-    && rm -rf /tmp/
+#cp -rf /tmp/* /usr/local/tomcat/webapps/ \
+#    && rm -rf /tmp/
 
 
 EXPOSE 8080
