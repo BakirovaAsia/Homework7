@@ -7,7 +7,7 @@ services:
   webapp:
     build: ./prod
     ports:
-      - "8080:8080
+      - "8080:8080"
     volumes:
       - web-dir:/tmp
     
