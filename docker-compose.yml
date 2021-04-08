@@ -6,6 +6,8 @@ services:
       - web-dir:/usr/local/webapps
   webapp:
     build: ./prod
+    depends_on:
+      - pack
     ports:
       - "8080:8080"
     volumes:
