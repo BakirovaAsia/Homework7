@@ -4,7 +4,7 @@ services:
     build: ./pack
     volumes:
       - web-dir:/usr/local/webapps
-  webapp:
+  web:
     build: ./prod
     ports:
       - "8080:8080"
