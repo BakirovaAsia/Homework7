@@ -10,5 +10,5 @@ WORKDIR /usr/local/CaucusCalculator/
 RUN  mvn package
 
 WORKDIR /usr/local/webapps/
-RUN cp /usr/local/CaucusCalculator/CaucusCalculator-0.0.1-SNAPSHOT.war . \
-    && cp -r /usr/local/CaucusCalculator/CaucusCalculator-0.0.1-SNAPSHOT ./CaucusCalculator-0.0.1-SNAPSHOT
+RUN cp /usr/local/CaucusCalculator/target/CaucusCalculator-0.0.1-SNAPSHOT.war . \
+    && cp -r /usr/local/CaucusCalculator/target/CaucusCalculator-0.0.1-SNAPSHOT ./CaucusCalculator-0.0.1-SNAPSHOT
