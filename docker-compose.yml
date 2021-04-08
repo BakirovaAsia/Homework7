@@ -4,7 +4,6 @@ services:
     build: ./pack
     volumes:
       - web-dir:/usr/local/webapps
-    tty: true
   webapp:
     build: ./prod
     ports:
