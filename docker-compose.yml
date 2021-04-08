@@ -12,7 +12,6 @@ services:
       - web-dir:/usr/local/pack
     depends_on:
       - pack
-    command: cp -r /usr/local/pack/ /usr/local/tomcat/webapps/ 
-    
+      
 volumes:
   web-dir:
